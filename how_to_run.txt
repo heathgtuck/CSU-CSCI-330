@@ -1,0 +1,2 @@
+iverilog AND* && ./a.out
+iverilog OR* && ./a.out
