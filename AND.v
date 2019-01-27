@@ -6,9 +6,10 @@ output wire out1;
 
 wire Y0, Y1, Y2;
 
-and(Y0, in1, in2);
-and(Y1, Y0, in1);
-and(Y2, Y0, in2);
-and(out1, Y1, Y2);
+// AND
+nand(Y0, in1, in2);
+nand(Y1, Y2, in1);
+nand(Y2, Y1, in1);
+nand(out1, Y1, Y0);
 
 endmodule
